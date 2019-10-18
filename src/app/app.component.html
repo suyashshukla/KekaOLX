@@ -1,0 +1,59 @@
+<div class="vertical-navbar bg-dark" style="background-color: #3E4349; width: 130px; height: 100vh;">
+  <div style="background-color: #524360;">
+    <div class="media align-items-center">
+      <img src="../assets/images/logo.png" style="width: 160px; height: 70px;" class="pr-5">
+    </div>
+  </div>
+  <div>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a routerLink="/classifieds" routerLinkActive="act" class="nav-link mt-4">
+        <i class="fa fa-th fa-2x pl-4"></i>
+        <p class="text-light pl-2">Classifieds</p>
+      </a>  
+    </li>
+    <li class="nav-item">
+      <a routerLink="/my-classifieds" routerLinkActive="act" class="nav-link">
+        <i class="fa fa-shopping-bag fa-2x pl-4"></i>
+        <p class="text-light">My Classifieds</p>
+      </a>  
+    </li>
+    <li class="nav-item">
+      <a routerLink="/inbox" routerLinkActive="act" class="nav-link">
+        <i class="fa fa-envelope-o fa-2x pl-4"></i>
+        <p class="text-light pl-3">Inbox</p>
+      </a>  
+    </li>
+    <li class="nav-item">
+      <a routerLink="/admin" routerLinkActive="act" class="nav-link">
+        <i class="fa fa-user fa-2x pl-4"></i>
+        <p class="text-light pl-3">Admin</p>
+      </a>  
+    </li>
+  </ul>    
+  </div>
+</div>
+<div class="fixed-top " style="padding-left: 130px;">
+  <nav class="navbar" style="background-color: #76618A;">
+    <div class="text-light">
+      Corporate Classifieds
+    </div>
+    <div class="float-right text-light">
+      Siddharth raghuvanshi<img class="rounded pl-4 py-2" src="../assets/images/user.png" style="width: 60px;">
+    </div>
+  </nav>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<style>
+  a:hover{
+   background-color: rgba(62, 67, 73,0.6) ; 
+  }
+  a:visited, .act{
+   background-color: rgba(62, 67, 73,0.6) ; 
+  }
+  a{
+    color:rgba(255,255,255,0.7);
+  }
+</style>
